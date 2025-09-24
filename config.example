@@ -1,0 +1,13 @@
+# Server Configuration
+PORT=8080
+DEBUG=true
+
+# File Upload Configuration
+UPLOAD_DIR=./uploads
+MAX_FILE_SIZE=10485760
+
+# Frontend Configuration
+FRONTEND_URL=http://localhost:3000
+
+# CORS Configuration (comma-separated list)
+# ALLOWED_ORIGINS=http://localhost:3000,https://yourdomain.com
