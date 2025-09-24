@@ -1,0 +1,175 @@
+.create-exam-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.create-exam-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.create-exam-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.create-exam-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #555;
+  font-size: 1rem;
+}
+
+.form-input {
+  padding: 12px 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.file-input {
+  padding: 8px 12px;
+  background-color: #f8f9fa;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  cursor: pointer;
+  padding: 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.radio-label:hover {
+  border-color: #667eea;
+  background-color: #f8f9ff;
+}
+
+.radio-label input[type="radio"] {
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+}
+
+.radio-label input[type="radio"]:checked + .radio-text {
+  color: #667eea;
+}
+
+.radio-text {
+  flex: 1;
+  line-height: 1.5;
+}
+
+.file-info {
+  padding: 8px 12px;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  color: #155724;
+  font-size: 0.9rem;
+}
+
+.file-help {
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.file-help p {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.file-help code {
+  display: block;
+  background-color: #e9ecef;
+  padding: 8px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  line-height: 1.4;
+}
+
+.submit-button {
+  padding: 16px 32px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.error-message {
+  padding: 12px 16px;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  color: #721c24;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .create-exam-container {
+    padding: 10px;
+  }
+  
+  .create-exam-card {
+    padding: 24px;
+  }
+  
+  .create-exam-title {
+    font-size: 1.5rem;
+  }
+}
