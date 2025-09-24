@@ -1,11 +1,11 @@
 export type ExamMode = 'timer' | 'stopwatch';
 
-export type ExamStatus = 'pending' | 'active' | 'completed' | 'expired';
+export type StatusExam = 'pending' | 'active' | 'completed' | 'expired';
 
 export interface Exam {
   id: string;
   mode: ExamMode;
-  status: ExamStatus;
+  status: StatusExam;
   exam_pdf_path: string;
   answer_key_path: string;
   duration?: number; // in milliseconds
@@ -47,7 +47,7 @@ export interface QuestionResult {
 export interface ExamStatus {
   id: string;
   mode: ExamMode;
-  status: ExamStatus;
+  status: StatusExam;
   start_time?: string;
   end_time?: string;
   elapsed_time?: number; // in milliseconds

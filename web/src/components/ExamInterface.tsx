@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { examAPI } from '../services/api';
 import { Exam, ExamStatus as ExamStatusType, ExamResult } from '../types/exam';
-import Timer from './Timer';
-import Stopwatch from './Stopwatch';
-import AnswerForm from './AnswerForm';
-import ExamResults from './ExamResults';
 import './ExamInterface.css';
+import AnswerForm from './AnswerForm';
+import Stopwatch from './Stopwatch';
+import ExamResults from './ExamResults';
+import Timer from './Timer';
 
 interface ExamInterfaceProps {
   examId: string;
